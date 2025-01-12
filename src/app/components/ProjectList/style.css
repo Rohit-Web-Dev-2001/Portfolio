@@ -106,6 +106,7 @@ body {
   background-color: transparent;
   transform: translateX(-100px);
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  margin:0 12px;
 }
 
 .project-image .prjtimage {
