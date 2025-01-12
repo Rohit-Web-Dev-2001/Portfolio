@@ -1,0 +1,109 @@
+.introduction {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all ease-in 0.3s;
+}
+
+.upper-text {
+  font-size: 5vw; /* Changed to vw for responsiveness */
+  font-weight: bolder;
+  font-family: "Segoe UI Black";
+  margin: 0;
+  text-align: center;
+}
+
+.lower-text {
+  font-size: 2.5vw;
+}
+
+.title .text {
+  font-size: 15vw; /* Changed to vw for responsiveness */
+  font-weight: bolder;
+  font-family: "Segoe UI Black";
+  margin: 0;
+  overflow: hidden; /* To hide the overflowing text initially */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.animated-text1 {
+  display: inline-block;
+  position: relative;
+  animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.role {
+  font-size: 4vw; /* Changed to vw for responsiveness */
+  font-weight: bolder;
+  font-family: "Segoe UI Black";
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.text-light {
+  color: #f0f0f0;
+}
+
+.text-dark {
+  color: #333;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.span1 {
+  font-size: 4vw;
+  margin-right: 1vw;
+}
+
+.span2 {
+  font-size: 5vw;
+  padding: 2vw;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in 0.3s;
+  }
+  .upper-text {
+    font-size: 2.5vw;
+  }
+
+  .span1 {
+    font-size: 2.1vw;
+    margin-right: 1vw;
+  }
+
+  .span2 {
+    font-size: 2.9vw;
+    padding: 10px;
+  }
+  .title .text {
+    font-size: 13vw;
+  }
+  .role {
+    font-size: 3vw;
+  }
+}

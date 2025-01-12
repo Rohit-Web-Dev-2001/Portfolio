@@ -1,0 +1,169 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #33333300;
+  color: white;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all ease-in .3s;
+}
+
+nav.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 999;
+  color: #ffc107;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #ffc107;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  width: max-content;
+  top: 100%;
+  right:-35px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 0px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #444;
+}
+
+.theme-menu:hover .dropdown {
+  display: block;
+}
+.btn-outline-warning {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .btn-outline-warning {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffc107;
+    background-color: transparent;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+    transform: scale(1.05);
+  }
+  .btn-outline-warning:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+  }
+
+  /* toggler button */
+  .btn-outline-warning {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+  /* toggler button */
+
+  .theme-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 8px;
+    right: 30px;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    align-items: center;
+    margin-top: 60px; /* Adjust the margin to avoid overlap with the fixed nav */
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  ul li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
+
+/* *,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+.body {
+  font-family: Arial, sans-serif;
+  height: max-content; /* Increased height to enable scrolling */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 900px;
+  opacity: 0;
+  transform: translateY(50px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.contact-container.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-info {
+  background-color: transparent;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info h2 {
+  margin: 0 0 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.contact-info .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-info .social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.contact-form {
+  padding: 40px;
+  flex: 1;
+}
+
+.contact-form h2 {
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 45px;
+}
+
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;
+}
+.contact-form .form-group textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-info {
+    width: 40%;
+  }
+
+  .contact-form {
+    width: 60%;
+  }
+}
