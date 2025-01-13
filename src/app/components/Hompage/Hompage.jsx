@@ -24,7 +24,7 @@ const Hompage = (props) => {
             // color: "black",
           }}
         >
-          Hello I'am Pardhan
+          Hello I'am
         </p>
       <div className="title">
       <p
