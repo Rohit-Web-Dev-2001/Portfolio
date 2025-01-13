@@ -137,9 +137,8 @@ const Projectlist = () => {
           <button
             class="button-86"
             role="button"
-            onClick={() => {
-              router.push("/Projects/Expensetracker/Client");
-            }}
+            href="https://expense-tracker-phi-lake.vercel.app/"
+          
           >
             Preview...
           </button>
