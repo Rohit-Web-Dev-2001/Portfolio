@@ -134,14 +134,18 @@ const Projectlist = () => {
             features and benefits of the project, providing an overview for the
             audience.
           </p>
-          <a
+          <button
             class="button-86"
             role="button"
             href="https://expense-tracker-phi-lake.vercel.app/"
           
           >
             Preview...
-          </a>
+          </button>
+        
+
+          <a class="button-86"
+            href="https://expense-tracker-phi-lake.vercel.app/">Click Here </a>
         </div>
       </div>
 
