@@ -54,7 +54,7 @@ const AboutUs = () => {
           width={300}
           height={300}
         />
-        <div className="about-text scroll-element mx-5">
+        <div className="about-text scroll-element mx-2">
           <div className="about-header scroll-element">
             <h1>ABOUT ME</h1>
           </div>
