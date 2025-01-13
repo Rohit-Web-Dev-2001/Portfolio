@@ -55,10 +55,7 @@ const Navabar = () => {
           <button class="btn-outline-warning" onClick={toggleTheme}>{theme==="dark"?'Light Mode':'Dark Mode'}</button>
           <li className="theme-menu">
             {" "}
-            <a href="javascript:void(0)" className={theme==="dark"?'text-white':'text-black'} onClick={ ()=>{
-              toggleTheme()
-              setMenuActive(false)
-            }>
+            <a href="javascript:void(0)" className={theme==="dark"?'text-white':'text-black'} onClick={toggleTheme}>
             <i class={theme==="dark"?'bi bi-brightness-high fs-5':'bi bi-moon-stars fs-5'}></i>
             </a>{" "}
           </li>{" "}
