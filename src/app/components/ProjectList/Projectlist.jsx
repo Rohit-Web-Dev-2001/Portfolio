@@ -134,17 +134,6 @@ const Projectlist = () => {
             features and benefits of the project, providing an overview for the
             audience.
           </p>
-          <button
-            class="button-86"
-            role="button"
-            onClick ={
-             ()=>{ window.loacation.href="https://expense-tracker-phi-lake.vercel.app/"}
-            }
-          >
-            Preview... Btn
-          </button>
-        
-
           <a class="button-86"
             href="https://expense-tracker-phi-lake.vercel.app/">Click Here </a>
         </div>
