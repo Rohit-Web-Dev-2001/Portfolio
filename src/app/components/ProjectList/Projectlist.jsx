@@ -137,10 +137,11 @@ const Projectlist = () => {
           <button
             class="button-86"
             role="button"
-            href="https://expense-tracker-phi-lake.vercel.app/"
-          
+            onClick ={
+             ()=>{ window.loacation.href="https://expense-tracker-phi-lake.vercel.app/"}
+            }
           >
-            Preview...
+            Preview... Btn
           </button>
         
 
