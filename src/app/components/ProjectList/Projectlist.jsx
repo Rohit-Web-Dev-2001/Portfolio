@@ -135,7 +135,7 @@ const Projectlist = () => {
             audience.
           </p>
           <a class="button-86"
-            href="https://expense-tracker-phi-lake.vercel.app/">Click Here </a>
+            href="https://expense-tracker-phi-lake.vercel.app/">Preview... </a>
         </div>
       </div>
 
