@@ -67,10 +67,12 @@ const AboutUs = () => {
             I design responsive and user-friendly web applications. I have good
             knowledge in React, Next.js, Node.js, and MongoDB.
           </p>
-           <a href="./Rohit Resume.pdf" download>
+           <a href="./RohitResume.pdf" download style{{
+               textDecoration:"none",
+           }}>
               <button className="btn">Download Resume</button>
             </a>
-          <button className="btn">Download Resume</button>
+{/*        <button className="btn">Download Resume</button> */}
         </div>
       </div>
     </div>
