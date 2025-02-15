@@ -3,7 +3,8 @@ import { React, useState, useContext, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import profile from "../../Images/ExpenseTracker.png";
+import ExpenseTracker from "../../Images/ExpenseTracker.png";
+import TodoList from "../../Images/TodoList.png";
 import { style } from "./style.css";
 // import { ExpenseTracker } from "@/app/Context/Context";
 import Router from "next/router";
@@ -109,7 +110,7 @@ const Projectlist = () => {
           ref={imageRef}
         >
           <Image
-            src={profile}
+            src={ExpenseTracker}
             alt="About Us Image"
             className={`prjtimage rounded-5 shadow ${
               theme === "dark" ? "bg-black" : "bg-white"
@@ -153,7 +154,7 @@ const Projectlist = () => {
           ref={imageRef}
         >
            <Image
-            src={profile}
+            src={TodoList}
             alt="About Us Image"
             className={`prjtimage rounded-5 shadow ${
               theme === "dark" ? "bg-black" : "bg-white"
