@@ -178,6 +178,8 @@ const Projectlist = () => {
             features and benefits of the project, providing an overview for the
             audience.
           </p>
+            <a class="button-86"
+            href="https://todo-list-mu-mauve-77.vercel.app/">Preview... </a>
         </div>
       </div>
 
