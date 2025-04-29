@@ -14,7 +14,7 @@ const Hompage = (props) => {
     <>
      <div
         className={theme==="dark" ?' bg-black introduction shadow py-5 homepage':' bg-white introduction shadow py-5 homepage'}
-        id="Home"
+        id="home"
       >
         <p
           className="my-0 upper-text "
