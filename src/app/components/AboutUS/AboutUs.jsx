@@ -44,7 +44,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-   <main className={theme==="dark"?'bg-black':'bg-white'}>
+   <main className={theme==="dark"?'bg-black':'bg-white'} id="about">
      <div className="aboutus-container" id="AboutUs">
       <div className="about-content">
         <Image
