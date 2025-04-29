@@ -90,6 +90,8 @@ const Projectlist = () => {
       className={`container-fluid main-container w-100 ${
         theme === "dark" ? "bg-black" : "bg-white"
       }`}
+
+      id="projects"
     >
       <h1
         className=" animated-text1 text-center text-warning scroll-element"
