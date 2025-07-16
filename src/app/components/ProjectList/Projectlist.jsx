@@ -10,7 +10,7 @@ import { style } from "./style.css";
 import Router from "next/router";
 import { ThemeContext } from "../../Context/ThemeContext";
 
-const Projectlist = () => {
+const ProjectList = () => {
   const router = useRouter();
   const imageRef = useRef(null);
   const titleRef = useRef(null);
@@ -253,4 +253,4 @@ const Projectlist = () => {
   );
 };
 
-export default Projectlist;
+export default ProjectList;

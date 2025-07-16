@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Style from "./style.css";
 // import { ExpenseTracker } from "@/app/Context/Context";
-import { ExpenseTracker } from "./../../Context/Context";
+import { ExpenseTracker } from "../../Context/Context";
 import { ThemeContext } from "../../Context/ThemeContext";
 
-const Hompage = (props) => {
+const HomPage = (props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -56,4 +56,4 @@ const Hompage = (props) => {
   );
 };
 
-export default Hompage;
+export default HomPage;

@@ -2,18 +2,20 @@
 import { React, useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./NavBar/Navabar";
-import Hompage from "./Hompage/Hompage";
+import HomPage from "./Hompage/HomPage";
 import AboutUs from "./AboutUS/AboutUs";
-import Projectlist from "./ProjectList/Projectlist";
+import ProjectList from "./ProjectList/ProjectList";
+import ContactMe from"./ContactUS/ContactMe";
 
 
 const Main = () => {
   return (
     <>
       <Navbar />
-      <Hompage />
+      <HomPage />
       <AboutUs />
-      <Projectlist />
+      <ProjectList />
+      <ContactMe/>
     </>
   );
 };

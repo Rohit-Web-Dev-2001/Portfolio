@@ -3,11 +3,18 @@ body {
   margin: 0;
   padding: 0;
 }
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: max-content;
+}
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem; /* Add spacing between image and text */
+  flex-wrap: wrap; /* Optional: makes it responsive */
 }
 
 .aboutus-container {
@@ -51,7 +58,6 @@ main{
   box-shadow: rgba(0, 0, 0, 0.434) 0px -50px 36px -28px inset;
 }
 
-
 .btn {
   display: block;
   padding: 10px 20px;
@@ -80,7 +86,7 @@ main{
     text-align: center;
     margin: 20px 0px;
     letter-spacing: 5px;
-}
+  }
 
   .about-content {
     flex-direction: column;
