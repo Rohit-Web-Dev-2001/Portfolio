@@ -149,7 +149,7 @@ const ContactMe = (props) => {
               ></textarea>{" "}
             </div>{" "}
             <button type="submit" >
-              Send Message
+              Send Messages
             </button>{" "}
           </form>{" "}
         </div>{" "}
