@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ExpenseTracker from "../../Images/ExpenseTracker.png";
 import TodoList from "../../Images/TodoList.png";
+import ChatApp from "../../Images/ChatApp.png";
 import { style } from "./style.css";
 // import { ExpenseTracker } from "@/app/Context/Context";
 import Router from "next/router";
@@ -90,7 +91,6 @@ const ProjectList = () => {
       className={`container-fluid main-container w-100 ${
         theme === "dark" ? "bg-black" : "bg-white"
       }`}
-
       id="projects"
     >
       <h1
@@ -99,7 +99,52 @@ const ProjectList = () => {
       >
         PROJECTS
       </h1>
-      {/* First porject */}
+
+      {/* First project */}
+      <div
+        className={`project-container my-5 ${
+          theme === "dark" ? "bg-black" : "bg-white"
+        }`}
+        id="Pjcontainer2"
+      >
+        <div
+          className={`project-image scroll-element ${
+            theme === "dark" ? "bg-black" : "bg-white"
+          }`}
+          ref={imageRef}
+        >
+          <Image
+            src={ChatApp}
+            alt="About Us Image"
+            className={`prjtimage rounded-5 shadow ${
+              theme === "dark" ? "bg-black" : "bg-white"
+            }`}
+          />
+        </div>
+        <div
+          className={`project-details  ${
+            theme === "dark" ? "bg-black" : "bg-white"
+          }`}
+        >
+          <h2 className="scroll-element text-warning" ref={titleRef}>
+            Real Time Chat Application
+          </h2>
+          <p
+            className={`scroll-element ${
+              theme === "dark" ? "text-white" : "text-black"
+            }`}
+            ref={descriptionRef}
+          >
+            A real-time chat app enabling secure messaging, group conversations,
+            and file sharing. Real-time messaging platform supporting emojis,
+            encryption, quick replies, and seamless syncing. 
+          </p>
+          <a class="button-86" href="https://todo-list-mu-mauve-77.vercel.app/">
+            Preview...{" "}
+          </a>
+        </div>
+      </div>
+      {/* Second porject */}
       <div
         className={` rounded-5 project-container  my-1 ${
           theme === "dark" ? "bg-black" : "bg-white"
@@ -137,12 +182,16 @@ const ProjectList = () => {
             features and benefits of the project, providing an overview for the
             audience.
           </p>
-          <a class="button-86"
-            href="https://expense-tracker-phi-lake.vercel.app/">Preview... </a>
+          <a
+            class="button-86"
+            href="https://expense-tracker-phi-lake.vercel.app/"
+          >
+            Preview...{" "}
+          </a>
         </div>
       </div>
 
-      {/* 2nd project */}
+      {/* Third project */}
       <div
         className={`project-container my-5 ${
           theme === "dark" ? "bg-black" : "bg-white"
@@ -155,7 +204,7 @@ const ProjectList = () => {
           }`}
           ref={imageRef}
         >
-           <Image
+          <Image
             src={TodoList}
             alt="About Us Image"
             className={`prjtimage rounded-5 shadow ${
@@ -181,42 +230,11 @@ const ProjectList = () => {
             features and benefits of the project, providing an overview for the
             audience.
           </p>
-            <a class="button-86"
-            href="https://todo-list-mu-mauve-77.vercel.app/">Preview... </a>
+          <a class="button-86" href="https://todo-list-mu-mauve-77.vercel.app/">
+            Preview...{" "}
+          </a>
         </div>
       </div>
-
-      {/* Third porject */}
-      {/* <div className="project-container">
-        <div
-          className={`project-image scroll-element ${
-            theme==="dark" ? "bg-black" : "bg-white"
-          }`}
-          ref={imageRef}
-        >
-          <img
-            src="https://uizard.io/static/14f6d8934c3c877b87e07ba591471078/0cfa7/ac6597f9ca9857740d4b2b5ee17ddc4557fd083e-1440x835.webp"
-            alt="Project Image"
-            className={` rounded-5 ${theme==="dark" ? "bg-black" : "bg-white"}`}
-          />
-        </div>
-        <div className={`project-details  ${theme==="dark" ? "bg-black" : "bg-white"}`}>
-          <h2 className="scroll-element text-warning" ref={titleRef}>
-           CHAT APP
-          </h2>
-          <p
-            className={`scroll-element ${theme==="dark" ? "text-white" : "text-black"}`}
-            ref={descriptionRef}
-          >
-            This is a brief description of the project. It highlights the key
-            features and benefits of the project, providing an overview for the
-            audience.
-          </p>
-          <button class="cool-button w-25 ">
-            <span>Preview</span>
-          </button>
-        </div>
-      </div> */}
 
       {/* 2nd project */}
       {/* <div className="project-container flex-row-reverse  my-5">
