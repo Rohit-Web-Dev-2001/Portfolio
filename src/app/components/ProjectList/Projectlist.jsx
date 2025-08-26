@@ -139,7 +139,7 @@ const ProjectList = () => {
             and file sharing. Real-time messaging platform supporting emojis,
             encryption, quick replies, and seamless syncing. 
           </p>
-          <a class="button-86" href="https://todo-list-mu-mauve-77.vercel.app/">
+          <a class="button-86" href="https://chat-app-lac-tau.vercel.app/">
             Preview...{" "}
           </a>
         </div>
